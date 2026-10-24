@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>CARPLAY</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Bật CarSplitVN (Offline)</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>autoOpen</string>
+			<key>label</key>
+			<string>Mở khi kết nối CarPlay</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>restoreLast</string>
+			<key>label</key>
+			<string>Mở lại bố cục lần cuối</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>unplugToPhone</string>
+			<key>label</key>
+			<string>Về iPhone khi rút CarPlay</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>THANH TAB</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>autoHideBar</string>
+			<key>label</key>
+			<string>Thanh tab tự ẩn</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>5</integer>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>barHideDelay</string>
+			<key>label</key>
+			<string>Ẩn sau</string>
+			<key>validTitles</key>
+			<array>
+				<string>3 giây</string>
+				<string>5 giây</string>
+				<string>10 giây</string>
+				<string>30 giây</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>3</integer>
+				<integer>5</integer>
+				<integer>10</integer>
+				<integer>30</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>MÀN HÌNH XE &amp; BONG BÓNG TỐC ĐỘ</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>hud</string>
+			<key>label</key>
+			<string>Bong bóng tốc độ</string>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>100.0</real>
+			<key>defaults</key>
+			<string>vn.carsplit.roothide</string>
+			<key>key</key>
+			<string>carZoom</string>
+			<key>max</key>
+			<real>130.0</real>
+			<key>min</key>
+			<real>70.0</real>
+			<key>showValue</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>vn.carsplit.roothide/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openCarSplitApp</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Mở ứng dụng CarSplitVN</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CarSplitVN</string>
+</dict>
+</plist>

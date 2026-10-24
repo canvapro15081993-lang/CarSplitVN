@@ -1,0 +1,9 @@
+Package: vn.carsplit.roothide
+Name: CarSplitVN (Offline RootHide)
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Description: Chia màn hình CarPlay (1-4 ứng dụng) & Bong bóng tốc độ HUD hoạt động 100% Offline trên iPhone 8 (Dopamine RootHide).
+Maintainer: CarSplitVN
+Author: CarSplitVN
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader

@@ -1,0 +1,33 @@
+#!/bin/sh
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    JBROOT=""
+    if command -v jbroot >/dev/null 2>&1; then
+        JBROOT="$(jbroot / 2>/dev/null | sed 's:/$::')"
+    fi
+    if [ -z "$JBROOT" ]; then
+        for d in /var/containers/Bundle/Application/.jbroot-* /private/var/containers/Bundle/Application/.jbroot-*; do
+            if [ -d "$d" ]; then
+                JBROOT="$d"
+                break
+            fi
+        done
+    fi
+
+    UICACHE_BIN=""
+    for u in "$JBROOT/usr/bin/uicache" /usr/bin/uicache /var/jb/usr/bin/uicache "$(command -v uicache 2>/dev/null)"; do
+        if [ -n "$u" ] && [ -x "$u" ]; then
+            UICACHE_BIN="$u"
+            break
+        fi
+    done
+
+    if [ -n "$UICACHE_BIN" ]; then
+        if [ -n "$JBROOT" ] && [ -d "$JBROOT/Applications/CarSplitVN.app" ]; then
+            "$UICACHE_BIN" -u "$JBROOT/Applications/CarSplitVN.app" >/dev/null 2>&1 || true
+        fi
+        if [ -d "/Applications/CarSplitVN.app" ]; then
+            "$UICACHE_BIN" -u /Applications/CarSplitVN.app >/dev/null 2>&1 || true
+        fi
+    fi
+fi
+exit 0
