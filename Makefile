@@ -9,6 +9,8 @@ TWEAK_NAME = CarSplitVN
 
 CarSplitVN_FILES = Tweak.x
 CarSplitVN_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
+CarSplitVN_LDFLAGS = -undefined dynamic_lookup
+
 CarSplitVN_FRAMEWORKS = UIKit Foundation CoreGraphics QuartzCore CoreLocation CarPlay
 CarSplitVN_PRIVATE_FRAMEWORKS = FrontBoardServices SpringBoardServices CarKit
 
