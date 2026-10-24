@@ -12,7 +12,8 @@ CarSplitVN_CFLAGS = -fobjc-arc -Wno-deprecated-declarations
 CarSplitVN_LDFLAGS = -undefined dynamic_lookup
 
 CarSplitVN_FRAMEWORKS = UIKit Foundation CoreGraphics QuartzCore CoreLocation CarPlay
-CarSplitVN_PRIVATE_FRAMEWORKS = FrontBoardServices SpringBoardServices CarKit
+# Dùng weak_framework ?? tránh b?t bu?c ph?i có file v?t lý lúc compile
+CarSplitVN_WEAK_FRAMEWORKS = FrontBoardServices SpringBoardServices CarKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
